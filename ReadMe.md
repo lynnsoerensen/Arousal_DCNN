@@ -3,7 +3,7 @@ by Lynn K.A. Sörensen, Heleen A. Slagter, Sander M. Bohté, & H. Steven Scholte
 
 
 ![](https://github.com/lynnsoerensen/Arousal_DCNN/blob/master/Figures/Figure1.png)
-The figure is copied from this [preprint](https://www.biorxiv.org/content/10.1101/2021.05.19.444798v1). The example picture in B is licensed under CC BY-SA 2.0 and was adapted from [Flickr](https://farm2.staticflickr.com/1196/1089845176_c9b801237d_z.jpg)
+The figure is copied from this [preprint](https://www.biorxiv.org/content/10.1101/2021.05.19.444798v1). The example picture in B is licensed under CC BY-SA 2.0 and was adapted from [Flickr](https://farm2.staticflickr.com/1196/1089845176_c9b801237d_z.jpg).
 
 ### Overview
 This is the code to reproduce the results of this [paper](https://www.biorxiv.org/content/10.1101/2021.05.19.444798v1). The repository is organized in three parts:
