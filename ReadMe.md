@@ -2,7 +2,7 @@
 by Lynn K.A. Sörensen, Heleen A. Slagter, Sander M. Bohté, & H. Steven Scholte
 
 
-
+![](https://github.com/lynnsoerensen/Arousal_DCNN/blob/master/Figures/Figure1.png)
 
 ### Overview
 This is the code to reproduce the results of this [paper](https://www.biorxiv.org/content/10.1101/2021.05.19.444798v1). The repository is organized in three parts:
