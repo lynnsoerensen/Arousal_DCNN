@@ -96,7 +96,7 @@ def insert_layer_nonseq(model, layer_regex, insert_layer_factory,
             layer_input = layer_input[0]
 
         # Insert layer if name matches the regular expression
-        if re.match(layer_regex, layer.name):
+        if re.findall(layer_regex, layer.name):
             if position == 'replace':
                 x = layer_input
             elif position == 'after':
@@ -147,4 +147,3 @@ def insert_layer_nonseq(model, layer_regex, insert_layer_factory,
         network_dict['new_output_tensor_of'].update({layer.name: x})
 
     return Model(inputs=model.inputs, outputs=x)
-

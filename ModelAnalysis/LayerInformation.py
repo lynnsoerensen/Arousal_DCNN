@@ -60,7 +60,7 @@ gen_train = coco_squared(dataset_train, batch_size=len(dataset_train['x_ids']) /
 del dataset_base, dataset_base2
 
 mode = 'random'
-num_rands = [1.125, 1.25, 1.5, 2, 3, 4, 20]
+num_rands = [1.125, 1.25, 1.5, 2, 3, 4, 6, 20]
 new_tracker = False
 filename = 'Results/tracker_LayerInfo.pkl'
 if new_tracker == True:

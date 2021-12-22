@@ -43,6 +43,33 @@ class ASNTransfer_arousal(Layer):
 
         return r_act_val
 
+class ReLU_arousal(Layer):
+    """ReLU function with added gain on output.
+    23.11.2021
+    """
+    def __init__(self, loc='out', **kwargs):
+        self.supports_masking = True
+        #self.gain = gain
+        self.loc = loc
+
+        super(ReLU_arousal, self).__init__(**kwargs)
+
+
+    def call(self, inputs):
+        x = inputs[0]
+        gain = inputs[1]
+        if self.loc == 'in':
+            #x = x * self.gain
+            x = x * gain
+
+        if self.loc == 'out':
+            #r_act_val = K.relu(act_val) * self.gain
+            r_act_val = K.relu(x) * gain
+        else:
+            r_act_val = K.relu(x)
+
+        return r_act_val
+
 class ArousalValue(Layer):
 
     def __init__(self, output_dim, **kwargs):
